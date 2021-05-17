@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Show" table="spectacole" schema="iss">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="name">
+            <column name="name" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="nrRows">
+            <column name="nrRows" sql-type="int(11)" length="50"/>
+        </property>
+        <property name="nrSeatsPerRow">
+            <column name="nrSeatsPerRow" sql-type="int(11)" length="50"/>
+        </property>
+        <property name="date">
+            <column name="data" sql-type="varchar(50)" length="50"/>
+        </property>
+        <property name="price">
+            <column name="pret" sql-type="double" length="50"/>
+        </property>
+        <property name="theaterId">
+            <column name="teatru" sql-type="varchar(50)" length="50"/>
+        </property>
+    </class>
+</hibernate-mapping>

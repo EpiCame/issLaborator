@@ -1,0 +1,42 @@
+controller/LoginController.java
+ controller.LoginController
+ controller.LoginController$1
+ controller.LoginController$2
+repository/IUserRepository.java
+ repository.IUserRepository
+utils/JdbcUtil.java
+ utils.JdbcUtil
+model/Spectator.java
+ model.Spectator
+controller/MessageAlert.java
+ controller.MessageAlert
+repository/ICrudRepository.java
+ repository.ICrudRepository
+model/User.java
+ model.User
+repository/UserRepository.java
+ repository.UserRepository
+controller/ManagerController.java
+ controller.ManagerController
+model/Manager.java
+ model.Manager
+controller/ClientController.java
+ controller.ClientController
+repository/UserHibernateRepository.java
+ repository.UserHibernateRepository
+repository/IShowRepository.java
+ repository.IShowRepository
+Main.java
+ Main
+repository/ShowHibernateRepository.java
+ repository.ShowHibernateRepository
+service/MasterService.java
+ service.MasterService
+model/Show.java
+ model.Show
+repository/ShowRepository.java
+ repository.ShowRepository
+model/Theater.java
+ model.Theater
+model/Reservation.java
+ model.Reservation
