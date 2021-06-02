@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="424.0" prefWidth="329.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConfigController">
+   <children>
+      <TableView fx:id="seatsTableView" layoutX="21.0" layoutY="22.0" prefHeight="353.0" prefWidth="152.0">
+        <columns>
+          <TableColumn fx:id="rowColumn" prefWidth="75.0" text="Row" />
+          <TableColumn fx:id="seatColumn" prefWidth="75.0" text="Seat" />
+        </columns>
+      </TableView>
+      <Button fx:id="viewButton" layoutX="198.0" layoutY="111.0" mnemonicParsing="false" onAction="#handleViewButton" prefHeight="34.0" prefWidth="108.0" text="View Reservation" />
+      <Button fx:id="makeButton" layoutX="198.0" layoutY="221.0" mnemonicParsing="false" onAction="#handleMakeButton" prefHeight="34.0" prefWidth="110.0" text="Make Reservation" />
+      <ComboBox fx:id="rowCombo" layoutX="189.0" layoutY="287.0" prefHeight="26.0" prefWidth="63.0" promptText="row" />
+      <ComboBox fx:id="seatCombo" layoutX="253.0" layoutY="287.0" prefHeight="26.0" prefWidth="63.0" promptText="seat" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="459.0" prefWidth="348.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReservationView">
+   <children>
+      <TableView fx:id="seatsTableView" layoutX="23.0" layoutY="22.0" prefHeight="331.0" prefWidth="299.0">
+        <columns>
+          <TableColumn fx:id="rowColumn" prefWidth="149.39999771118164" text="Row" />
+          <TableColumn fx:id="seatColumn" prefWidth="149.00001525878906" text="Seat" />
+        </columns>
+      </TableView>
+      <Button fx:id="viewButton" layoutX="56.0" layoutY="393.0" mnemonicParsing="false" text="View Reservation" />
+      <Button fx:id="reserveButton" layoutX="216.0" layoutY="393.0" mnemonicParsing="false" text="Reserve" />
+   </children>
+</AnchorPane>

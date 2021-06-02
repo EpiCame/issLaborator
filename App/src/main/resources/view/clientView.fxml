@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="416.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientController">
+   <children>
+      <TableView fx:id="showTableView" layoutX="36.0" layoutY="20.0" prefHeight="286.0" prefWidth="277.0">
+        <columns>
+          <TableColumn fx:id="nameTableColumn" prefWidth="112.19997787475586" text="Show Name" />
+          <TableColumn fx:id="seatsTableColumn" prefWidth="94.20001220703125" text="Seats" />
+            <TableColumn fx:id="priceTableColumn" prefWidth="75.0" text="Price" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="showDatePicker" layoutX="28.0" layoutY="343.0" onAction="#handleDatePick" prefHeight="32.0" prefWidth="133.0" />
+      <Button fx:id="configurationButton" layoutX="192.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleConfigButton" prefHeight="32.0" prefWidth="134.0" text="View Configuration" />
+   </children>
+</AnchorPane>

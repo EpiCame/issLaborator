@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.0'
+    implementation group: 'org.mariadb.jdbc', name: 'mariadb-java-client', version: '2.7.2'
+    implementation group: 'org.springframework', name: 'spring-context', version: '5.3.4'
+    compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.2.Final'
+}
+mainClassName='Main'
+test {
+    useJUnitPlatform()
+}
+jar{
+    manifest{
+        attributes('Main-Class':'Main')
+    }
+    from{
+        configurations.compile.collect {it.isDirectory() ? it : zipTree(it)}
+    }
+}
+
+javafx {
+    version = "11.0.1"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}

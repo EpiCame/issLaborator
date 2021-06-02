@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="model.Reservation" table="rezervari" schema="iss">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="row">
+            <column name="row" sql-type="int(11)" length="50"/>
+        </property>
+        <property name="seat">
+            <column name="seat" sql-type="int(11)" length="50"/>
+        </property>
+        <many-to-one name="spectator" class="model.Spectator" fetch="select">
+            <column name="user_id" />
+        </many-to-one>
+        <many-to-one name="show" class="model.Show" fetch="join">
+            <column name="spec_id" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>
